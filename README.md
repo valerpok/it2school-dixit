@@ -2,4 +2,4 @@
 Graduation project 
 
 Collaborators:
-valerpok
+* valerpok
