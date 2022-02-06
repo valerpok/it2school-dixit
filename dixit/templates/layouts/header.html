@@ -1,0 +1,9 @@
+<header class="header">
+  <div class="header__content">
+    {% if user %}
+      user: {{ user.username }}
+    {% else %}
+      haha, anonymous user!
+    {% endif %}
+  </div>
+</header>

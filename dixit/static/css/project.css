@@ -1,0 +1,41 @@
+div {
+  /*border: 1px solid #000;*/
+  background-color: antiquewhite;
+}
+
+.page-wrapper {
+  height: 785px;
+}
+
+#board {
+  margin-top: 40px;
+}
+
+.status {
+  padding-left: 30%;
+}
+
+.sidebar {
+  padding-left: 20px !important;
+  padding-right: 0;
+  margin-top: 5%;
+}
+
+.game-container {
+  height: 700px;
+}
+
+.cards{
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card{
+   width: 180px;
+}
+
+.voted {
+  border: 5px solid #00f;
+}
+
+

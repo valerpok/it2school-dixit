@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+    {% if request.user.is_authenticated %}
+      <form method="post" action="{% url 'games:join' %}">{% csrf_token %}
+        <button class="btn btn-secondary" style="width: 100%; margin: 20px"> join game</button>
+       </form>
+    {% else %}
+      <form ></form>
+      <form method="get" action="{% url 'account_signup' %}">
+         <button class="btn btn-secondary" style="width: 100%; margin: 10px"> register </button>
+      </form>
+      <form method="get" action="{% url 'account_login' %}">
+        <button class="btn btn-secondary" style="width: 100%; margin: 10px"> Login </button>
+      </form>
+    {% endif %}
+    </div>
+  </div>
+{% endblock %}
