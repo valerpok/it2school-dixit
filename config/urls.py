@@ -7,7 +7,6 @@ from rest_framework.documentation import include_docs_urls
 urlpatterns = [
     path('', include(('common.urls', 'common'))),
     path(settings.ADMIN_URL, admin.site.urls),
-    path('games/', include(('games.urls', 'games'))),
     path('docs/', include_docs_urls(title='My API service'), name='api-docs'),
     path('accounts/', include('allauth.urls')),
     # API urls
