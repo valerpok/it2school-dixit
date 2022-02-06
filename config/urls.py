@@ -14,7 +14,6 @@ urlpatterns = [
         path('', include(('users.urls', 'users'))),
         path('', include(('flatpages.urls', 'flatpages'))),
         path('', include(('files.urls', 'files'))),
-        path('', include(('games.api_urls', 'games')))
         # Your stuff: custom urls includes go here
     ], 'api'), namespace='api')),
 
